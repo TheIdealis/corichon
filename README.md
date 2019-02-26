@@ -18,7 +18,7 @@ No other packages are required.
 
 Just add the `save_all` and `load_all` - function to every class and subclass.
 ```python
-from gherkin import save_all, load_all
+from cornichon import save_all, load_all
 
 class foo:
     # ...
