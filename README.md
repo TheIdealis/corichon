@@ -1,10 +1,10 @@
-gherkin - Save and load classes in python
+cornichon - Save and load classes in python
 ------------
 
 # Introduction
 
-When you do numerical calculations in Python, it often comes in handy to structure the data into classes and - of course - save them for later use. Although `pickle` might be an option, there is a huge downside to it. As soon as the data is save, you can no longer add further functionally to the class, e.g., functions for visualization.
-`gherkin` is trying to solve that problem by pickling only the data of every class and restoring the structure of the project recursively during the loading process.
+When performing numerical calculations in Python, it often comes in handy to structure the data into classes and - of course - save them for later use. Although `pickle` might be an option, there is a huge downside to it. As soon as the data is saved, you can no longer add further functionally to the class, e.g., functions for visualization.
+`cornichon` is trying to solve that problem by pickling only the data of every class and restoring the structure of the project recursively during the loading process.
 
 # Installation
 
@@ -18,7 +18,7 @@ No other packages are required.
 
 Just add the `save_all` and `load_all` - function to every class and subclass.
 ```python
-from gherkin import save_all, load_all
+from cornichon import save_all, load_all
 
 class foo:
     # ...
