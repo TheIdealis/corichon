@@ -7,6 +7,9 @@ from types import MethodType
 import pickle
 
 def save_all(self, filename):
+    directory = os.path.dirname(filename)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
     filename, extension = os.path.splitext(filename)
     if extension is '':
         extension = '.dat'
