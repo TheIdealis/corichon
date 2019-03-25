@@ -47,5 +47,4 @@ if __name__ == "__main__":
     tc.save_all(filename)
 
     tc2 = TestClass.from_file(filename)
-    tc2.load_all(filename)
     tc2.print_all()
